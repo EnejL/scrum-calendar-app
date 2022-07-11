@@ -1,3 +1,5 @@
+@import "styles.css";
+
 /* General, basic styling */
 *,
 *::before,
@@ -12,7 +14,7 @@ html {
 
 html,
 body {
-	height: auto;
+	height: 100%;
 }
 
 body {
@@ -26,7 +28,7 @@ body {
 
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	align-items: center;
 }
 
 img {
@@ -43,8 +45,19 @@ strong {
 	font-weight: var(--fw-bold);
 }
 
-/* Declaring the variables */
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+}
 
+h1 {
+	font-size: 5rem;
+}
+
+/* Declaring the variables */
 :root {
 	--ff-primary: 'Montserrat', sans-serif;
 	--ff-secondary: 'Lora', serif;
@@ -59,8 +72,8 @@ strong {
 	--clr-font-total: #303030;
 	--clr-font-daily: #16e0bd;
 
-	--clr-bg-main: #1f2255;
-	--clr-bg-accent: #565bba;
+	--clr-bg-main: #000000;
+	--clr-bg-accent: rgba(179, 179, 179, .5);;
 
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
